@@ -1,6 +1,7 @@
 const openEls = document.querySelectorAll("[data-open]");
 const closeEls = document.querySelectorAll("[data-close]");
 const fecha = document.querySelector('#fecha');
+const fechaAnterior = document.querySelector('#fechaAnterior')
 const isVisible = "is-visible";
 
 // Abrir modal
@@ -17,10 +18,19 @@ document.addEventListener("click", e => {
     }
 });
 
-// Fecha en seccion explorar
-const FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
+// Fecha en sección explorar
+const FECHA = new Date();
+
+// Fecha acutualpara las imagenes de "hoy"
+fecha.innerHTML = FECHA.toLocaleDateString('es-MX', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric'
+});
+// fecha del día anterior
+FECHA.setDate(FECHA.getDate() - 1);
+fechaAnterior.innerHTML = FECHA.toLocaleDateString('es-MX', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric'
 });
