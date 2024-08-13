@@ -1,0 +1,69 @@
+/* Estilos utilizados para el index.html */
+.contenido{
+    position: absolute;
+    margin-top: 80px;
+}
+.imagenes{
+    columns: 5;
+    margin: auto;
+    padding-left: 80px;
+}
+.card-image{
+    position: relative;
+    padding-top: 4px;
+    margin-top: 5px;
+}
+.card-image  img{
+    border-radius: 15px;
+    min-width: 240px;
+    max-width: 240px;
+}
+.card-image:hover > :first-child{
+    filter: brightness(60%);
+}
+.card-image:hover > *{
+    visibility: visible;
+    display: inline;
+}
+.button{
+    position: absolute;
+    left: 53%;
+    top: 5%;
+    padding: 13px 15px;
+    background-color: #e60023;
+    border-radius: 30px;
+    border: none;
+    visibility: hidden;
+}
+.card-image button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.oculto1{
+    position: absolute;
+    left: 55%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}
+.oculto2{
+    position: absolute;
+    left: 73%;
+    bottom: 8%;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+    visibility: hidden;
+    display: none;
+}

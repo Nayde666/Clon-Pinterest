@@ -1,0 +1,180 @@
+/*
+Hoja de estilos general, donde esta el estilo de los elementos que comparten los diferentes  
+apartos de la pagina, como lo es el header y el footer, que independientemente de index, explorar
+y crear es el mismo
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+/*----HEADER----*/
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98vw;
+    height: 80px;
+    font-size: 16px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+#pinterest-icon{
+    width: 35px;
+    height: 35px;
+    padding: 20px;
+}
+#pinterest-icon:hover{
+    background-color: #E9E9E9;
+    border-radius: 150px;
+}
+.first-list{
+    display: flex;
+}
+.first-list li{
+    list-style: none;
+    padding: 0px 12px;
+}
+.first-list a{
+    text-decoration: none;
+    color: black;
+}
+#inicio{
+    background-color: black;
+    color: white;
+    padding: 14px 12px;
+    border-radius: 25px;
+}
+/* Barra de busqueda */
+.search{
+    flex-grow: 1;
+    height: 48px;
+    background-color: #e9e9e9;
+    border-radius: 30px;
+}
+.search:hover{
+    background-color: #e1e1e1;
+}
+.searh:focus-within{
+    border: 4px solid #7fc1ff;
+}
+.barra{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+#lupa{
+    padding: 13px;
+    color: #767676;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.barra input{
+    border: none;
+    background-color: inherit;
+    outline: none;
+    padding: 0px 8px 0px 0px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+/*Iconos derecha*/
+.right-items span{
+    padding:8px;
+    color: #767676;
+    font-size: 28px;
+}
+.right-items span:hover{
+    background-color: #e9e9e9;
+    border-radius: 150px;
+    cursor: pointer;
+}
+
+/*----FOOTER-----*/
+.information-button {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20px;
+    left: 96%;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.466);
+    border: none;
+    
+}
+.information-button span {
+    color: black;
+    padding: 10px;
+}
+.information-button:hover{
+    background-color: #ececec;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*Modal*/
+.modal { 
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    margin-left: 83%;
+    margin-top: 27%;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.466);
+    position: fixed;
+    visibility: hidden;
+    transition: all 0.35s ease-in;
+    padding: 10px;
+    z-index: 9999;
+}
+.modal-dialog {
+    position: relative;
+    border-radius: 5px;
+    overflow: auto;
+}
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px;
+}
+.modal-header a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+.modal-header a:hover {
+    cursor: pointer;
+    background-color: #e3e2e2;
+}
+.modal-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.modal-nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 2px 0;
+    font-size: 0.9rem;
+}
+.modal-nav a:hover {
+    text-decoration: underline;
+}
+.modal.is-visible {
+    visibility: visible;
+    opacity: 1;
+}

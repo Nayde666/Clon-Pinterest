@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos de google-->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <!--CSS para index-->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/explorar.css">
+    <title>Pinterest</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Icono -->
+            <a href="https://mx.pinterest.com/"><img id="pinterest-icon" src="./images/logo.png" alt="Icono Pinterest"></a>
+            <!-- Iconos izquierda -->
+            <div class="left-items">
+                <ul class="first-list">
+                    <li><a id="inicio" href="./index.html">Inicio</a></li>
+                    <li><a id="explorar" href="./explorar.html">Explorar</a></li>
+                    <li><a id="crear" href="./crear.html">Crear</a></li>
+                </ul>
+            </div>
+            <!-- Barra de busqueda -->
+             <div class="search">
+                <div class="barra">
+                    <span id="lupa" class="material-symbols-outlined">
+                        search
+                    </span>
+                    <input type="text" placeholder="Buscar">
+                </div>
+             </div>
+             <!-- Iconos derecha -->
+              <div class="right-items">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <span class="material-symbols-outlined">
+                    sms
+                </span>
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                </span>
+              </div>
+        </nav>
+    </header>
+    <main class="contenido">
+        <!--Contenedor principal de las imagenes-->
+        <div class="explorar">
+            <h2 id="fecha"></h2>
+            <h1>Sigue Inspirándote</h1>
+        </div>
+        <div class="imagenes">
+            <!--Imagenes Individuales-->
+            <div class="card-image">
+                <img class="img" src="./images/pasta.webp" alt="Imagen de Pasta">
+                <p class="descripcion">Comida rápida, pero saludable</p>
+                <h1 class="descripcion">Platillos hechos en 10 minutos </h1>
+            </div>
+            <div class="card-image">
+                <img class="img" src="./images/botella.jpg" alt="Imagen de botella">
+                <p class="descripcion">Termos personalizados</p>
+                <h1 class="descripcion">Ponle estilo a tu botella de agua </h1>
+            </div>
+            <div class="card-image">
+                <img class="img" src="./images/peinado.jpg" alt="Imagen de peinado">
+                <p class="descripcion">Cambia tu look</p>
+                <h1 class="descripcion">Peinados perfectos para cabellos cortos </h1>
+            </div>
+            <div class="card-image">
+                <img class="img" src="./images/locker.jpg" alt="Imagen de Locker decorado">
+                <p class="descripcion">Casilleros y escritorios estilosos </p>
+                <h1 class="descripcion">Espacios de estudio creativo para la escuela</h1>
+            </div>
+            <div class="card-image">
+                <img class="img" src="./images/outfits.jpg" alt="Imagen outfits de dos chicas">
+                <p class="descripcion">Street style</p>
+                <h1 class="descripcion">Lo mejor de la Copenhagen Fashion Week </h1>
+            </div>
+            <div class="card-image">
+                <img class="img" src="./images/muffins.jpg" alt="Imagen de muffins de chocolate">
+                <p class="descripcion">Endulza tus días</p>
+                <h1 class="descripcion">Postres rápidos y fáciles de hacer</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>¡Es todo por hoy!</p>
+        <button type="button" class="open-modal information-button" data-open="modal1">
+            <span class="material-symbols-outlined">
+                question_mark
+            </span>
+        </button>
+        <div class="modal" id="modal1">
+            <div class="modal-dialog">
+              <header class="modal-header">
+                <h4><a href="#" target="_blank">Visita el Centro...<span class="material-symbols-outlined">open_in_new</span></a></h4>
+                <h4><a href="#" target="_blank">Crear widget<span class="material-symbols-outlined">open_in_new</span></a></h4>
+              </header>
+              <section class="modal-content">
+                <nav class="modal-nav">
+                    <hr>
+                    <a href="#">Info</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Empresas</a>
+                    <a href="#">Empleos</a>
+                    <a href="#">Desarrolladores</a>
+                    <a href="#">Eliminaciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Anuncios personalizados</a>
+                    <a href="#">Tus derechos de privacidad</a>
+                    <a href="#">Condiciones</a>
+                </nav>
+            </section>
+            </div>
+        </div>
+    </footer>
+<script src="./JS/index.js"></script>
+</body>
+</html>

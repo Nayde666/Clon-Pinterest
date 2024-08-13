@@ -1,0 +1,57 @@
+.explorar {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.explorar h1, .explorar h2 {
+    padding: 10px;
+}
+.contenido{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -33px;
+}
+.imagenes {  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px; 
+    justify-content: center;
+    padding-left: 40px;
+
+}
+.card-image {
+    max-width: 450px;
+    max-height: 330px; 
+    padding-top: 4px;
+    margin-top: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 20px;
+}
+.card-image h1, .card-image p {
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+.card-image h1{
+    bottom: 30px;
+}
+.card-image p{
+    bottom: 110px;
+}
+.card-image > :first-child{
+    filter: brightness(60%);
+}
+footer p {
+    display: block;
+    color: #000;
+  }
